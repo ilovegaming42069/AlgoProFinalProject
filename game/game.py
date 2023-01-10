@@ -5,7 +5,7 @@ from models import Asteroid, Spaceship  # Import classes from models.py
 
 class SpaceRocks:
     MIN_ASTEROID_DISTANCE = 250
-    NUMBER_ASTEROID = 6
+    NUMBER_ASTEROID = 3
     FPS = 60
 
     def __init__(self):
@@ -200,7 +200,7 @@ class SpaceRocks:
             self.message = "You won!"
             self.finish = True
 
-            if self.best_time == "-" or self.timer//SpaceRocks.FPS < int(self.best_time):
+            if self.best_time == 0 or self.timer//SpaceRocks.FPS < int(self.best_time):
                 file = open("assets/shortest_time.txt", "w")
                 file.write(f"{self.timer//SpaceRocks.FPS} seconds")
                 file.close()
@@ -214,7 +214,7 @@ class SpaceRocks:
             print_text(self.screen, self.message, self.font)
 
         if self.finish and self.spaceship:
-            new_best_time = self.font.render(f"New best time: {self.timer // SpaceRocks.FPS} seconds", True, (255, 100, 50))
+            new_best_time = self.font.render(f"New best time: {self.timer // SpaceRocks.FPS} seconds", True, (255, 100,  50))
             if self.timer // SpaceRocks.FPS < self.best_time:
                 self.screen.blit(new_best_time, (100, 200))
 
