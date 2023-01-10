@@ -215,7 +215,8 @@ class SpaceRocks:
 
         if self.finish and self.spaceship:
             new_best_time = self.font.render(f"New best time: {self.timer // SpaceRocks.FPS} seconds", True, (255, 100, 50))
-            self.screen.blit(new_best_time, (100, 200))
+            if self.timer // SpaceRocks.FPS < self.best_time:
+                self.screen.blit(new_best_time, (100, 200))
 
         time_font = pygame.font.Font(None, 32)
         print_time(self.screen, f"Best Time: {self.best_time} seconds", time_font, (10, 10))
