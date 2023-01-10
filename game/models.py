@@ -25,9 +25,9 @@ class GameObject:  # Class for all game objects
 
 
 class Spaceship(GameObject):  # A child class of GameObject, for the spaceship
-    MANEUVERABILITY = 3
+    MANEUVERABILITY = 5
     ACCELERATION = 0.25
-    BULLET_SPEED = 3
+    BULLET_SPEED = 10
 
     def __init__(self, position, create_bullet_callback):
         self.create_bullet_callback = create_bullet_callback
