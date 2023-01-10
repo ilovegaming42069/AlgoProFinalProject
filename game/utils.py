@@ -56,7 +56,7 @@ def get_time():  # Gets the time from the txt
     lowest = lowest.split(" ")
     lowest = lowest[0]
     if lowest == "":
-        lowest = "-"
+        lowest = 0
     else:
         lowest = int(lowest)
     return lowest
