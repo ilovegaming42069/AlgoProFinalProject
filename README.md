@@ -22,4 +22,4 @@ Video link: https://drive.google.com/file/d/1CQINuDR9WY_YKpPnDGYtDmgjb4er9p-w/vi
 ![pause](pause.png)
 
 
-![win](win.png)
+![won](won.png)
