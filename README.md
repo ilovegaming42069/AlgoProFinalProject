@@ -13,3 +13,13 @@ Video link: https://drive.google.com/file/d/1CQINuDR9WY_YKpPnDGYtDmgjb4er9p-w/vi
 - Background music, i added two backgorund music, one for the menu and one for the game itself
 
 ## Screenshots
+![start](start.png)
+
+
+![gameplay](gameplay.png)
+
+
+![pause](pause.png)
+
+
+![win](win.png)
